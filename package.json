@@ -1,0 +1,74 @@
+{
+	"name": "geovana",
+	"version": "1.0.0",
+	"description": "Wedding assistant Geovanna, assets and website.",
+	"main": "gulpfile.js",
+	"scripts": {
+		"serve": "gulp serve",
+		"image": "gulp image",
+		"svg": "gulp svg",
+		"sass": "gulp sass",
+		"js": "gulp js",
+		"watch": "gulp watch",
+		"vendor": "gulp vendor",
+		"build": "gulp"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/diogocezar/dctb-front-boilerplate.git"
+	},
+	"keywords": [
+		"babel",
+		"browserify",
+		"gulp",
+		"modernjs",
+		"front-end",
+		"sass"
+	],
+	"author": "Diogo Cezar <diogo@diogocezar.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/creativetroops/geovanna/issues"
+	},
+	"homepage": "https://github.com/creativetroops/geovanna#readme",
+	"browserify": {
+		"transform": [
+			[
+				"babelify",
+				{
+					"presets": [
+						"es2015"
+					]
+				}
+			]
+		]
+	},
+	"devDependencies": {
+		"axios": "^0.18.0",
+		"babel-core": "^6.26.3",
+		"babel-preset-es2015": "^6.24.1",
+		"babelify": "^8.0.0",
+		"bootstrap": "^4.1.1",
+		"browser-sync": "^2.24.5",
+		"browserify": "^16.2.2",
+		"gulp": "^3.9.1",
+		"gulp-babel": "^7.0.1",
+		"gulp-color": "0.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-cssmin": "^0.2.0",
+		"gulp-imagemin": "^4.1.0",
+		"gulp-rename": "^1.3.0",
+		"gulp-sass": "^4.0.1",
+		"gulp-svgo": "^1.5.4",
+		"gulp-uglify": "^3.0.0",
+		"inputmask": "^4.0.0",
+		"jquery": "^3.3.1",
+		"jquery.mousewheel": "^3.1.9",
+		"jquery.nicescroll": "^3.7.6",
+		"owl.carousel": "^2.3.4",
+		"scrollreveal": "^3.4.0",
+		"select2": "^4.0.6-rc.1",
+		"vinyl-buffer": "^1.0.1",
+		"vinyl-source-stream": "^2.0.0"
+	}
+}
