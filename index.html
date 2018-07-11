@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>Geovanna Garcia - Casamentos em Londrina</title>
+		<title>Geovanna Garcia - Casamentos e Eventos em Londrina</title>
 		<!-- Meta Tags -->
 		<meta charset="utf-8">
 		<meta name="keywords"            content=""/>
@@ -29,7 +29,7 @@
 		<!-- Canonical -->
 		<link rel="canonical" href=""/>
 		<!-- FavIcon -->
-		<link href="" rel="icon" type="image/x-icon"/>
+		<link href="./assets/images/geovanna-favicon.png" rel="icon" type="image/x-icon"/>
 		<!-- CSS -->
 		<link href="./assets/css/base/base.css"   rel="stylesheet" type="text/css"/>
 		<link href="./assets/css/pages/index.css" rel="stylesheet" type="text/css"/>
@@ -37,8 +37,87 @@
 		<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
+		<!-- Loader -->
+		<section id="loader">
+			<img src="./assets/images/geovanna-logo-loader.svg" alt="Logotipo Geovanna Garcia"/>
+		</section>
+		<!-- Menu -->
+		<nav id="header-menu">
+			<div class="container">
+				<!-- Logo -->
+				<header>
+					<div title="Menu" class="hamburguer d-xs-block d-sm-block d-md-block d-lg-none">
+						<span></span>
+					</div>
+					<a href="#" class="a-header">
+						<img id="logo-geovanna-top" src="./assets/images/geovanna-logo-nav.svg" alt="Logo LIEN">
+					</a>
+				</header>
+				<!-- Menu Desktop -->
+				<nav class="menu-desktop bg-transparent bg-shared d-none d-md-block">
+					<div class="menu-container nav navbar-nav">
+						<ul>
+							<li class="menu-item">
+								<a href="#apresentacao" data-menu="true">Apresentação</a>
+							</li>
+							<li class="menu-item">
+								<a href="#sobre" data-menu="true">Sobre</a>
+							</li>
+							<li class="menu-item">
+								<a href="#servicos" data-menu="true">Serviços</a>
+							</li>
+							<li class="menu-item">
+								<a href="#depoimentos" data-menu="true">Depoimentos</a>
+							</li>
+							<li class="menu-item">
+								<a href="#contato" data-menu="true">Contato</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- Menu Mobile -->
+				<nav class="menu-mobile bg-transparent bg-shared d-xs-block d-sm-block d-md-block d-lg-none">
+					<div class="menu-container nav navbar-nav">
+						<ul>
+							<li class="menu-item">
+								<a href="#apresentacao" data-menu="true">Apresentação</a>
+							</li>
+							<li class="menu-item">
+								<a href="#sobre" data-menu="true">Sobre</a>
+							</li>
+							<li class="menu-item">
+								<a href="#servicos" data-menu="true">Serviços</a>
+							</li>
+							<li class="menu-item">
+								<a href="#depoimentos" data-menu="true">Depoimentos</a>
+							</li>
+							<li class="menu-item">
+								<a href="#contato" data-menu="true">Contato</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</nav>
 		<!-- Main -->
 		<main>
+			<section id="home">
+				<div class="box-home">
+					<h1>O grande momento chegou?</h1>
+					<h2>Você vão se casar? Não se preocupe!</h2>
+					<h3>Sou a <span class="hl">Geovanna Garcia</span>,</h3>
+					<h3>Estou aqui para lhe ajudar</h3>
+					<button class="button button-transparent">ENTRE EM CONTATO</button>
+				</div>
+			</section>
+			<section id="apresentacao">
+				<div class="box-presentation">
+					<h1>Preparamos uma apresentação<br/>especial para vocês!</h1>
+					<img src="./assets/images/geovanna-icon-presentation.svg" alt="Imagem de um cardápio decorado com corações" />
+					<h2>conheça detalhadamente os nossos serviços</h2>
+					<button class="button button-white">BAIXAR A APRESENTAÇÃO</button>
+				</div>
+			</section>
 		</main>
 		<!-- Vendor -->
 		<script src="./js/vendor/vendor.js"></script>

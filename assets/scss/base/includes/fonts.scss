@@ -4,6 +4,10 @@
 // Fonts
 // Set the project fonts here
 
-//@include font-face("font-name", "../../../fonts/font-name", null, null, eot woff ttf svg);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300');
+@include font-face("TrajanPro-Regular", "../../../fonts/TrajanPro-Regular", null, null, eot svg);
+@include font-face("AfterMidnite", "../../../fonts/AfterMidnite", null, null, eot svg);
 
-$font-primary     : 'Arial', sans-serif;
+$font-primary     : 'TrajanPro-Regular', serif;
+$font-secondary   : 'AfterMidnite', sans-serif;
+$font-tertiary    : 'Montserrat', sans-serif;

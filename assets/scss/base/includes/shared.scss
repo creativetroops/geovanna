@@ -15,8 +15,8 @@ html{
 body{
   font-size: $size-base;
   font-family: $font-primary;
-  background-color: $color-white;
-  color: $color-black;
+  background-color: $color-light;
+  color: $color-purple;
 }
 *,
 *:after,
@@ -37,22 +37,22 @@ input, textarea, select{
 // Links
 
 a{
-  color: $color-black;
+  color: $color-purple;
   text-decoration: none;
   &:hover{
-    color: $color-black;
+    color: $color-purple;
     text-decoration: none;
   }
   &:focus{
-    color: $color-black;
+    color: $color-purple;
     text-decoration: none;
   }
   &:active{
-    color: $color-black;
+    color: $color-purple;
     text-decoration: none;
   }
   &:visited{
-    color: $color-black;
+    color: $color-purple;
     text-decoration: none;
   }
 }
@@ -60,20 +60,20 @@ a{
 // Selection
 
 ::-moz-selection {
-  color: $color-white;
-  background: $color-black;
+  color: $color-light;
+  background: $color-purple;
 }
 
 ::selection {
-  color: $color-white;
-  background: $color-black;
+  color: $color-light;
+  background: $color-purple;
 }
 
 // Headings
 
 h1, h2, h3, h4{
   font-family: $font-primary;
-  color: $color-black;
+  color: $color-purple;
 }
 
 h1{
@@ -128,4 +128,65 @@ p{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+// Buttons
+
+.button{
+	cursor: pointer;
+	width: 200px;
+	border-radius: 40px;
+	height: 40px;
+	line-height: 38px;
+	font-family: $font-tertiary;
+	font-size: 0.8rem;
+	left: 50%;
+	position: relative;
+	-webkit-transform: translate(-50%, 0) !important;
+	-moz-transform: translate(-50%, 0) !important;
+	-ms-transform: translate(-50%, 0) !important;
+	transform: translate(-50%, 0) !important;
+}
+
+.button-transparent{
+	border: 1px solid $color-light;
+	background-color: transparent;
+	color: $color-light;
+	@include transition(.3s);
+	&:hover{
+		background-color: $color-light;
+		color: $color-dark-purple;
+	}
+}
+
+.button-white {
+	border: 1px solid $color-light;
+	background-color: $color-light;
+	color: $color-purple;
+	@include transition(.3s);
+	&:hover {
+		background-color: transparent;
+		color: $color-light;
+	}
+}
+
+// Loader
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: $color-purple;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
+	img{
+		height: 300px;
+		width: 300px;
+	}
 }

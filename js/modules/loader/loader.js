@@ -3,7 +3,7 @@ export class Loader {
 		this.configs = {
 			'delay'    : 500,
 			'recheck'  : 500,
-			'velocity' : "slow",
+			'velocity' : "fast",
 			'element'  : '#loader'
 		}
 		this.Util = window.util

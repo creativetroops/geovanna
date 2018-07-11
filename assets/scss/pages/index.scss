@@ -10,6 +10,75 @@
 @import '../base/includes/colors.scss';
 @import '../base/includes/fonts.scss';
 
-.error{
-	border: 1px solid red!important;
+#home{
+	height: calc(100vh - 70px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 70px;
+	background: linear-gradient(rgba(34, 34, 59, 0.84), rgba(34, 34, 59, 0.98)), url(../../../assets/images/geovanna-bg-home.png);
+	background-position: center center;
+	.box-home{
+		max-width: 75vw;
+		h1, h2{
+			font-family: $font-secondary;
+			color: $color-light;
+			text-align: center;
+		}
+		h1{
+			font-size: 5rem;
+		}
+		h2{
+			font-size: 3rem;
+			margin-bottom: 4rem;
+		}
+		h3{
+			font-family: $font-primary;
+			color: $color-light;
+			text-align: center;
+			.hl{
+				color: $color-light-purple;
+			}
+		}
+		button{
+			margin-top: 4rem;
+		}
+	}
+}
+
+#apresentacao {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(rgba(74, 74, 105, 0.80), rgba(74, 74, 105, 0.80)), url(../../../assets/images/geovanna-bg-presentation.png);
+	background-position: center center;
+	.box-presentation {
+		h1,
+		h2 {
+			font-family: $font-primary;
+			color: $color-light;
+			text-align: center;
+		}
+		h1 {
+			margin-top: 4.5rem;
+			font-size: 2rem;
+		}
+		h2 {
+			font-size: 1rem;
+			font-family: $font-tertiary
+		}
+		img {
+			margin: 2.5rem 0;
+			height: 80px;
+			left: 50%;
+			position: relative;
+			-webkit-transform: translate(-50%, 0) !important;
+			-moz-transform: translate(-50%, 0) !important;
+			-ms-transform: translate(-50%, 0) !important;
+			transform: translate(-50%, 0) !important;
+		}
+		button {
+			margin: 2.5rem 0;
+		}
+	}
 }
