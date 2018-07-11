@@ -2,31 +2,31 @@ export class PluginScrollReveal {
 	constructor() {
 		this.configs = {
 			'.sr-1' : {
-				'duration'  : 1200,
+				'duration'  : 1500,
 				'origin'    : 'left',
-				'reset'     : true,
-				'delay'     : 100,
+				'reset'     : false,
+				'delay'     : 500,
 				'scale'     : 0.9,
 			},
 			'.sr-2' : {
-				'duration'  : 1200,
+				'duration'  : 1800,
 				'origin'    : 'top',
-				'reset'     : true,
-				'delay'     : 100,
+				'reset'     : false,
+				'delay'     : 300,
 				'scale'     : 0.9
 			},
-			'.s3-3' : {
-				'duration'  : 1200,
+			'.sr-3' : {
+				'duration'  : 1000,
 				'origin'    : 'bottom',
-				'reset'     : true,
+				'reset'     : false,
 				'delay'     : 800,
-				'scale'     : 0.9
+				'scale'     : 0.7
 			},
 			'.sr-4' : {
-				'duration'  : 1200,
+				'duration'  : 800,
 				'origin'    : 'right',
-				'reset'     : true,
-				'delay'     : 100,
+				'reset'     : false,
+				'delay'     : 200,
 				'scale'     : 0.9,
 			}
 		}
