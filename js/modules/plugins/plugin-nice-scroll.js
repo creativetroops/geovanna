@@ -1,7 +1,7 @@
 export class PluginNiceScroll {
 	constructor() {
 		this.configs = {
-			'cursorwidth'        : "8px",
+			'cursorwidth'        : "6px",
 			'zindex'             : 1000,
 			'scrollspeed'        : 100,
 			'mousescrollstep'    : 60,
