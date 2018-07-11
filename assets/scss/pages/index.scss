@@ -41,6 +41,11 @@
 	font-family: $font-tertiary;
 	font-size: 1rem;
 	@extend .center-translate;
+	@include responsive(s3) {
+		height: 50px;
+		width: 220px!important;
+		font-size: 0.9rem;
+	}
 }
 
 .button-transparent{
@@ -71,6 +76,9 @@
 		margin-top: 2em !important;
 		position: absolute;
 		width: 100%;
+		@include responsive(s3) {
+			margin-top: 0em !important;
+		}
 		.owl-dot {
 			span {
 				@include transition(0.25s);
@@ -104,6 +112,9 @@
 	.box-home{
 		max-width: 75vw;
 		margin-top: 4rem;
+		@include responsive(s3) {
+			max-width: 95vw;
+		}
 		h2, h3{
 			font-family: $font-secondary;
 			color: $color-light;
@@ -113,16 +124,17 @@
 			font-size: 6.5rem;
 			@include responsive(s1) { font-size: 5.5rem; }
 			@include responsive(s2) { font-size: 5rem; }
-			@include responsive(s3) { font-size: 4.5rem; }
-			@include responsive(s4) { font-size: 4rem; }
+			@include responsive(s3) { font-size: 4rem; }
+			@include responsive(s4) { font-size: 3rem; }
+			@include responsive(s5) { font-size: 2.5rem; }
 		}
 		h3{
 			font-size: 4rem;
 			margin-bottom: 4rem;
 			@include responsive(s1) { font-size: 3.5rem; }
 			@include responsive(s2) { font-size: 3rem; }
-			@include responsive(s3) { font-size: 2.5rem; }
-			@include responsive(s4) { font-size: 2rem; }
+			@include responsive(s3) { font-size: 2rem; margin-top: 2rem; }
+			@include responsive(s5) { font-size: 1.5rem; margin-top: 1.5rem; }
 		}
 		h4{
 			font-family: $font-primary;
@@ -131,6 +143,7 @@
 			.hl{
 				color: $color-light-purple;
 			}
+			@include responsive(s3) { font-size: 1.2rem; }
 		}
 		button{
 			margin-top: 4rem;
@@ -146,6 +159,10 @@
 	background: linear-gradient(rgba(74, 74, 105, 0.80), rgba(74, 74, 105, 0.80)), url(../../../assets/images/geovanna-bg-presentation.jpg);
 	background-position: center center;
 	.box-presentation {
+		max-width: 75vw;
+		@include responsive(s3) {
+			max-width: 90vw;
+		}
 		h2,
 		h3 {
 			font-family: $font-primary;
@@ -154,6 +171,7 @@
 		}
 		h2 {
 			font-size: 2rem;
+			@include responsive(s3) { font-size: 1.4rem; }
 		}
 		h3 {
 			font-size: 1rem;
@@ -178,13 +196,13 @@
 		color: $color-dark-purple;
 		font-size: 6rem;
 		margin-bottom: 3rem;
-		@include responsive(s3) { text-align: center; }
+		@include responsive(s3) { text-align: center; font-size: 4rem; margin-bottom: 1rem; }
 	}
 	h3{
 		color: $color-light-purple;
 		font-size: 1.5rem;
 		margin-bottom: 2rem;
-		@include responsive(s3) { text-align: center; }
+		@include responsive(s3) { text-align: center; font-size: 1rem; margin-bottom: 1rem; }
 	}
 	p{
 		font-family: $font-tertiary;
@@ -255,8 +273,25 @@
 		color: $color-light-purple;
 		.hl{
 			font-size: 3rem;
+			@include responsive(s3) {
+				font-size: 2.5rem;
+				margin-bottom: 2.5rem;
+			}
+
+			@include responsive(s4) {
+				font-size: 2rem;
+				margin-bottom: 2rem;
+			}
 		}
 		margin-bottom: 2rem;
+		@include responsive(s3) {
+			font-size: 2rem;
+			margin-bottom: 2rem;
+		}
+		@include responsive(s4) {
+			font-size: 1.5rem;
+			margin-bottom: 1.5rem;
+		}
 	}
 	p{
 		font-family: $font-tertiary;
@@ -268,6 +303,7 @@
 		@include responsive(s3) {
 			padding: 0;
 			margin-bottom: 4rem;
+			font-size: 1rem;
 		}
 
 	}
@@ -287,6 +323,12 @@
 		font-size: 6rem;
 		margin-bottom: 3rem;
 		text-align: center;
+		@include responsive(s3) {
+			font-size: 5rem;
+		}
+		@include responsive(s4) {
+			font-size: 4rem;
+		}
 	}
 	img{
 		height: 120px;
@@ -313,6 +355,9 @@
 			padding: 0;
 			margin-bottom: 4rem;
 		}
+		@include responsive(s3) {
+			font-size: 1.1rem;
+		}
 	}
 	.row-testimony{
 		p{
@@ -334,6 +379,9 @@
 			@include responsive(s2) {
 				padding: 0;
 			}
+			@include responsive(s3) {
+				font-size: 0.9rem;
+			}
 		}
 		img{
 			margin-top: 3.2rem;
@@ -346,6 +394,9 @@
 		}
 		h4, h5{
 			text-align: center;
+			@include responsive(s3) {
+				font-size: 1rem;
+			}
 		}
 	}
 }
@@ -362,10 +413,10 @@
 		margin-bottom: 3rem;
 		text-align: center;
 		@include responsive(s3) {
-			font-size: 5rem;
+			font-size: 4rem;
 		}
 		@include responsive(s4) {
-			font-size: 4rem;
+			font-size: 3rem;
 		}
 	}
 	img{
@@ -384,10 +435,11 @@
 		margin-top: 4rem;
 		margin-bottom: 6rem;
 		@include responsive(s3) {
-			font-size: 1.8rem;
+			font-size: 1.5rem;
+			margin-bottom: 3rem;
 		}
 		@include responsive(s4) {
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 		}
 	}
 	h4{
@@ -397,7 +449,6 @@
 		@include responsive(s3) {
 			font-size: 1.3rem;
 		}
-
 		@include responsive(s4) {
 			font-size: 1.2rem;
 		}
@@ -417,6 +468,9 @@
 		}
 		font-size: 1.2em;
 		color: $color-light;
+		@include responsive(s3) {
+			font-size: 0.9rem;
+		}
 	}
 	ul{
 		padding: 0;
@@ -437,6 +491,10 @@
 				img{
 					height: 35px;
 					width: 35px;
+					@include responsive(s3) {
+						height: 20px;
+						width: 20px;
+					}
 				}
 			}
 		}
