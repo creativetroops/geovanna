@@ -15,7 +15,7 @@
 	padding-bottom: 6rem;
 }
 
-.center-translate {
+.center-translate{
 	left: 50%;
 	position: relative;
 	-webkit-transform: translate(-50%, 0) !important;
@@ -24,13 +24,46 @@
 	transform: translate(-50%, 0) !important;
 }
 
+.button{
+	cursor: pointer;
+	width: 260px;
+	border-radius: 40px;
+	height: 60px;
+	line-height: 38px;
+	font-family: $font-tertiary;
+	font-size: 1rem;
+	@extend .center-translate;
+}
+
+.button-transparent{
+	border: 1px solid $color-light;
+	background-color: transparent;
+	color: $color-light;
+	@include transition(.3s);
+	&:hover {
+		background-color: $color-light;
+		color: $color-dark-purple;
+	}
+}
+
+.button-white{
+	border: 1px solid $color-light;
+	background-color: $color-light;
+	color: $color-purple;
+	@include transition(.3s);
+	&:hover {
+		background-color: transparent;
+		color: $color-light;
+	}
+}
+
 #home{
 	height: calc(100vh - 70px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-top: 70px;
-	background: linear-gradient(rgba(34, 34, 59, 0.84), rgba(34, 34, 59, 0.98)), url(../../../assets/images/geovanna-bg-home.png);
+	background: linear-gradient(rgba(34, 34, 59, 0.84), rgba(34, 34, 59, 0.98)), url(../../../assets/images/geovanna-bg-home.jpg);
 	background-position: center center;
 	.box-home{
 		max-width: 75vw;
@@ -66,7 +99,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(rgba(74, 74, 105, 0.80), rgba(74, 74, 105, 0.80)), url(../../../assets/images/geovanna-bg-presentation.png);
+	background: linear-gradient(rgba(74, 74, 105, 0.80), rgba(74, 74, 105, 0.80)), url(../../../assets/images/geovanna-bg-presentation.jpg);
 	background-position: center center;
 	.box-presentation {
 		h2,
@@ -123,7 +156,7 @@
 
 #servicos{
 	@extend .default-session;
-	background: linear-gradient(rgba(34, 34, 59, 0.84), rgba(34, 34, 59, 0.98)), url(../../../assets/images/geovanna-bg-services.png);
+	background: linear-gradient(rgba(34, 34, 59, 0.84), rgba(34, 34, 59, 0.98)), url(../../../assets/images/geovanna-bg-services.jpg);
 	background-position: center center;
 	h2{
 		font-family: $font-primary;
@@ -153,9 +186,94 @@
 		color: $color-light;
 		text-align: center;
 		padding: 0 15%;
-		line-height: 1.7rem;
+		font-size: 1.2rem;
+		line-height: 2rem;
 	}
 	button{
 		margin-top: 3rem;
+	}
+}
+
+#depoimentos{
+	@extend .default-session;
+	h2 {
+		font-family: $font-secondary;
+		color: $color-dark-purple;
+		font-size: 6rem;
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+	img{
+		height: 120px;
+		@extend .center-translate;
+		margin-bottom: 3rem;
+	}
+	h3 {
+		color: $color-light-purple;
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+		text-align: center;
+		padding: 0 30%;
+		margin-bottom: 7rem;
+	}
+	.row-testimony{
+		p{
+			text-align: center;
+			padding: 0 15%;
+			font-size: 1.2rem;
+			margin-bottom: 2rem;
+			&:after{
+				content: '';
+				position: absolute;
+				width: 8em;
+				height: 3px;
+				background-color: $color-light-pink;
+				left: 50%;
+				float: left;
+				margin-top: 40px;
+				@extend .center-translate;
+			}
+		}
+		img{
+			margin-top: 2rem;
+		}
+		h5{
+			color: $color-light-pink;
+		}
+		h4, h5{
+			text-align: center;
+		}
+	}
+}
+
+#contato{
+	@extend .default-session;
+	background: linear-gradient(rgba(34, 34, 59, 0.80), rgba(34, 34, 59, 0.90)), url(../../../assets/images/geovanna-bg-contact.jpg);
+	background-position: center center;
+	text-align: center;
+	h2{
+		font-family: $font-secondary;
+		color: $color-light;
+		font-size: 6rem;
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+	img{
+		height: 120px;
+	}
+	h3{
+		font-family: $font-primary;
+		color: $color-light-pink;
+		margin-top: 4rem;
+		margin-bottom: 6rem;
+	}
+	h4{
+		font-family: $font-primary;
+		color: $color-light-pink;
+		font-size: 1.5rem;
+	}
+	p{
+		color: $color-light;
+		font-size: 2rem;
 	}
 }
