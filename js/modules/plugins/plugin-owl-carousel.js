@@ -6,8 +6,8 @@ export class PluginOwlCarousel {
 			'pagination'         : true,
 			'items'              : 1,
 			'dots'               : true,
-			'autoplay'           : true,
-			'autoplayTimeout'    : 3000,
+			'autoplay'           : false,
+			'autoplayTimeout'    : 5000,
 			'autoplayHoverPause' : true,
 			'singleItem'         : true,
 			'smartSpeed'         : 700

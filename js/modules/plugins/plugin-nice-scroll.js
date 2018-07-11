@@ -1,5 +1,6 @@
 export class PluginNiceScroll {
 	constructor() {
+		this.Mobile = window.mobile
 		this.configs = {
 			'cursorwidth'        : "8px",
 			'zindex'             : 1000,
@@ -14,6 +15,7 @@ export class PluginNiceScroll {
 		this.init()
 	}
 	init() {
-		$("html").niceScroll(this.configs)
+		if (!this.Mobile.isMobile)
+			$("html").niceScroll(this.configs)
 	}
 }

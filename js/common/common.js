@@ -1,5 +1,6 @@
 // Helpers
 import { Util } from '../modules/helpers/util'
+import { Mobile } from '../modules/helpers/mobile'
 
 // Loader
 import { Loader } from '../modules/loader/loader'
@@ -13,7 +14,8 @@ import { PluginOwlCarousel }  from '../modules/plugins/plugin-owl-carousel'
 import { PluginScrollReveal } from '../modules/plugins/plugin-scroll-reveal'
 
 // Exports Imutables
-window.util        = new Util()
+window.util   = new Util()
+window.mobile = new Mobile()
 
 // Global Loader
 window.loader = new Loader()

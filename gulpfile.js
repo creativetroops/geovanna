@@ -105,12 +105,10 @@ class Gulp{
 			const files = [
 				'./node_modules/jquery/dist/jquery.min.js',
 				'./node_modules/bootstrap/dist/js/bootstrap.min.js',
-				//'./node_modules/inputmask/dist/min/jquery.inputmask.bundle.min.js',
 				'./node_modules/jquery-mousewheel/jquery.mousewheel.js',
 				'./node_modules/jquery.nicescroll/dist/jquery.nicescroll.min.js',
 				'./node_modules/owl.carousel/dist/owl.carousel.min.js',
 				'./node_modules/scrollreveal/dist/scrollreveal.min.js',
-				//'./node_modules/select2/dist/js/select2.min.js'
 			]
 			return this.self.src(files)
 				.pipe(this.concat('vendor.js'))
@@ -139,7 +137,7 @@ class Gulp{
 		// Sass Changes
 		this.self.watch('./assets/scss/**', ['sass', this.browserSync.reload])
 		// JavaScript Changes
-		this.self.watch(['./js/**/*.js', '!./js/**/*.bundle.js'], ['js', this.browserSync.reload])
+		this.self.watch(['./js/pages/**/*.js', './js/**/*.js', '!./js/**/*.bundle.js', '!./js/pages/**/*.bundle.js'], ['js', this.browserSync.reload])
 		// HTML changes
 		this.self.watch('./*.html').on('change', () => {
 			this.logCommand('HTML', 'Changed')

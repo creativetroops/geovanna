@@ -66,28 +66,19 @@ export class Menu {
 		this.configs.previousScroll = scroller;
 	}
 	setLinks(){
-		$(".go-menu").on("click", function (e) {
+		$('[data-menu="true"]').on("click", function (e) {
 			e.preventDefault();
 			if ($(".menu-mobile").hasClass('active')) {
-				$(".hamburguer").toggleClass("active");
-				$(".menu-mobile").toggleClass("active");
+				$(".hamburguer").toggleClass("active")
+				$(".menu-mobile").toggleClass("active")
 				setTimeout(function () {
-					$(".menu-mobile").toggleClass("end");
-				}, 500);
+					$(".menu-mobile").toggleClass("end")
+				}, 500)
 			}
-			let o = $(this);
-			let plus = 30;
-			if (o.attr("href") === '#trabalhe-conosco') {
-				plus = 0;
-			}
+			let o = $(this)[0]
 			$("html, body").stop().animate({
-				scrollTop: $(o.attr("href")).offset().top - plus
-			}, 1e3, "easeOutQuart", function () {
-				if (o.attr("href") !== '#seja-um-franqueado') {
-					$('#header-menu').addClass('off');
-					$('#header-menu').removeClass('on');
-				}
-			});
+				scrollTop: $(o.hash).offset().top
+			}, 1000);
 		})
 	}
 }
