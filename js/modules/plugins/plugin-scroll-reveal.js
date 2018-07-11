@@ -1,5 +1,6 @@
 export class PluginScrollReveal {
 	constructor() {
+		this.Mobile = window.mobile
 		this.configs = {
 			'.sr-1' : {
 				'duration'  : 1500,
@@ -33,8 +34,10 @@ export class PluginScrollReveal {
 		this.init()
 	}
 	init() {
-		window.sr = ScrollReveal()
-		for(var key in this.configs)
-			sr.reveal(key, this.configs[key])
+		if (!this.Mobile.isMobile){
+			window.sr = ScrollReveal()
+			for (var key in this.configs)
+				sr.reveal(key, this.configs[key])
+		}
 	}
 }
