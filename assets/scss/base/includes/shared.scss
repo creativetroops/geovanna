@@ -108,6 +108,15 @@ p{
 
 // Buttons
 
+.center-translate{
+	left: 50%;
+	position: relative;
+	-webkit-transform: translate(-50%, 0) !important;
+	-moz-transform: translate(-50%, 0) !important;
+	-ms-transform: translate(-50%, 0) !important;
+	transform: translate(-50%, 0) !important;
+}
+
 .button{
 	cursor: pointer;
 	width: 260px;
@@ -116,12 +125,7 @@ p{
 	line-height: 38px;
 	font-family: $font-tertiary;
 	font-size: 1rem;
-	left: 50%;
-	position: relative;
-	-webkit-transform: translate(-50%, 0) !important;
-	-moz-transform: translate(-50%, 0) !important;
-	-ms-transform: translate(-50%, 0) !important;
-	transform: translate(-50%, 0) !important;
+	@extend .center-translate;
 }
 
 .button-transparent{
