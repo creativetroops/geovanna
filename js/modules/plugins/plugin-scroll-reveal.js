@@ -6,28 +6,28 @@ export class PluginScrollReveal {
 				'duration'  : 1500,
 				'origin'    : 'left',
 				'reset'     : false,
-				'delay'     : 500,
+				'delay'     : 100,
 				'scale'     : 0.9,
 			},
 			'.sr-2' : {
 				'duration'  : 1800,
 				'origin'    : 'top',
 				'reset'     : false,
-				'delay'     : 300,
+				'delay'     : 100,
 				'scale'     : 0.9
 			},
 			'.sr-3' : {
 				'duration'  : 1000,
 				'origin'    : 'bottom',
 				'reset'     : false,
-				'delay'     : 800,
+				'delay'     : 100,
 				'scale'     : 0.7
 			},
 			'.sr-4' : {
 				'duration'  : 800,
 				'origin'    : 'right',
 				'reset'     : false,
-				'delay'     : 200,
+				'delay'     : 100,
 				'scale'     : 0.9,
 			}
 		}
